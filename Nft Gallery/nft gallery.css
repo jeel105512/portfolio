@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: url(images/Background.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 20vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+.menu-button{
+    height: 10vh;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    color: white;
+
+    transition: all 1s ease;
+}
+
+.menu-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-button:hover{
+    background: red;
+}
+
+.menu-icon{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    right: 5px;
+    top: 5px;
+
+    z-index: 1;
+}
+.menu-icon i{
+    font-size: 2rem;
+    color: white;
+}
+
+.active-menu{
+    display: flex;
+    
+}
+
+
+
+/* HOME */
+.home{
+    background: black;
+    width: 100vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title{
+    color: white;
+    font-family: 'Courgette', cursive;
+    position: absolute;
+    top: 4.9%;
+    left: 46.7%;
+}
+
+.home-img img{
+    height: 580px;
+}
+
+
+/* NFT */
+.nft{
+    background: hsl(217, 54%, 11%);
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+.nft-title{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    padding: 40px 0;
+    font-size: 50px;
+}
+
+.cards{
+    width: 100vw;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.card{
+    font-family: sans-serif;
+    background: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    line-height: 26px;
+
+    padding: 25px;
+
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+}
+
+.img-overlay{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    height: 66%;
+    width: 330px;
+    top: 25px;
+    left: 25px;
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.img-overlay img{
+    width: 80px;
+    height: 80px;
+}
+
+.card h2{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.card h2:hover{
+    color: cyan;
+}
+
+.card p{
+    color: hsl(215, 51%, 70%);;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 15px;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.price,
+.creator{
+    display: flex;
+    align-items: center;
+}
+
+.price img,
+.creator img{
+    margin-right: 5px;
+}
+
+.price img{
+    width: 20px;
+    height: 30px;
+}
+
+.price div{
+    color: cyan;
+    padding-left: 5px;
+}
+
+.creator img{
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator div{
+    color: white;
+    padding-left: 5px;
+}
+
+
+
+/* GALLARY */
+
+.gallary{
+    background: hsl(216, 50%, 16%);
+}
+
+.gallary-title{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding: 4rem;
+    margin-bottom: 10px;
+}
+
+.gallary-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    padding: 1.25rem;
+    grid-gap: 2rem;
+}
+
+.gallary-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    box-shadow: 0 0 0 0 none;
+}
+
+.gallary-container img:hover{
+    width: 98%;
+    height: 98%;
+    box-shadow: 6px 6px 25px 0px black;
+}
+
+
+
+/* NEWS */
+
+.news{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    background: hsl(217, 54%, 11%);
+}
+
+.news-title{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding: 4rem;
+    margin-bottom: 10px;
+}
+
+.news div{
+    display: flex;
+    flex-direction: row;
+}
+
+.news-img{
+    width: 40vw;
+    height: 40vh;
+
+    padding: 1.5rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+
+    transition: all 0.5s ease;
+}
+
+.news-img:hover{
+    border-radius: 20px;
+    padding: 0rem;
+}
+
+.info{
+    padding: 120px 50px;
+    text-align: justify;
+    color: white;
+    font-size: 1.25rem;
+}

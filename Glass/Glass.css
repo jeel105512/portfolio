@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: url(Background-2.jpg); */
+    background: linear-gradient(to right top, #65dfc9, #6cdbed);
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 60vw;
+    height: 85vh;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1.25fr 3fr;
+    grid-template-rows: auto;
+}
+
+/* left */
+.left{
+    grid-area: left;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-areas: "user"
+                         "logos"
+                         "join";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.user-id{
+    grid-area: user;
+    color: rgb(74, 94, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+.img img{
+    
+    width: 70px;
+    height: 70px;
+}
+.user-text{
+    margin-top: 15px;
+}
+.bold-text{
+    font-weight: bold;
+}
+.light-text{
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+
+.logos{
+    grid-area: logos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+} 
+.logo{
+    color: rgba(74, 94, 149, 0.7);
+    font-weight: 600;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+}
+.logo-text{
+    padding-left: 20px;
+}
+
+
+.join-pro{
+    grid-area: join;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 203, 186);
+    border-radius: 15px;
+    width: 250px;
+    height: 105px;
+    margin: 20px 15px;
+}
+.join-text{
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+.join-img img{
+    width: 105px;
+    height: 110px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+
+
+/* left end */
+
+.right{
+    grid-area: right;
+    margin: 0px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right-title{
+    margin: 0;
+    font-weight: bold;
+    color: rgb(80, 102, 163);
+}
+.input-text{
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin: 5px 0;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: white;
+    border: none;
+    border-radius: 10px;
+
+    margin: 15px 0;
+    width: 600px;
+    height: 120px;
+}
+.game-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.game-img img{
+    width: 80px;
+    height: 80px;
+}
+
+.game-info{
+    padding: 0px 70px;
+}
+.game-name{
+    font-weight: bold;
+    color: rgba(80, 102, 163, 0.5);
+}
+.ps5{
+    padding: 10px 0;
+    font-size: 12px;
+    color: rgba(80, 102, 163, 0.5);
+}
+.rating{
+    background: rgba(210, 210, 210 ,0.5);
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+}
+.percentage{
+    background: rgb(59, 255, 203);
+    border-radius: 20px;
+    width: 60%;
+    height: 20px;
+}
+
+.percent{
+    width: 120px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.percent-text{
+    font-weight: bold;
+    color: rgba(104, 211, 175, 0.7);
+}

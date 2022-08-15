@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.flex{
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.clip-left{
+    clip-path: polygon(0 0, 0 40%, 5% 50%, 0 60%, 0 100%, 49% 100%, 100% 100%, 100% 80%, 100% 54%, 100% 20%, 100% 0, 43% 0);
+}
+
+.clip-right{
+    clip-path: polygon(20% 0%, 0 0, 0 57%, 0% 80%, 0 100%, 52% 100%, 100% 100%, 100% 60%, 95% 50%, 100% 40%, 100% 0, 49% 0);
+}
+
+.header{
+    background-image: url(images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    width: 100vw;
+    height: 70vh;
+
+    display: grid;
+    grid-template-rows: auto 60px;
+    grid-template-areas: 
+    "h1 h2"
+    "h3 h3";
+}
+.header-1{
+    grid-area: h1;
+}
+.header-2{
+    grid-area: h2;
+
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sub-title{
+    letter-spacing: 7px;
+}
+.title{
+    font-size: 70px;
+    font-weight: 100;
+}
+.line{
+    width: 70px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+}
+.header-text{
+    letter-spacing: 4px;
+    line-height: 25px;
+}
+.arrow{
+    color: white;
+    background: none;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    transition: all 0.5s ease;
+}
+.arrow:hover{
+    background: white;
+    color: black;
+}
+
+.header-3{
+    grid-area: h3;
+
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+.large{
+    font-size: 30px;
+}
+.no-border{
+    border: none;
+}
+.light{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.container{
+    /* padding: 2rem; */
+    width: 100vw;
+    height: 250vh;
+
+    display: grid;
+    grid-template-areas: 
+    "one two"
+    "three four"
+    "five six";
+    /* "seven eight"; */
+}
+
+.one{
+    background: rgb(255, 255, 255);
+    grid-area: one;
+
+    display: grid;
+    grid-template-areas: 
+    "one-1 one-2"
+    "one-3 one-4";
+}
+.one-1{
+    background-image: url(images/bedroll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: one-1;
+}
+.one-2{
+    background: rgb(255, 255, 255);
+    grid-area: one-2;
+}
+.one-3{
+    background: rgb(255, 255, 255);
+    grid-area: one-3;
+}
+.one-4{
+    background-image: url(images/shoeshine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: one-4;
+}
+
+.two{
+    background-image: url(images/boots.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    grid-area: two;
+}
+.three{
+    background-image: url(images/bike.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: three;
+}
+.four{
+    background: rgb(255, 255, 255);
+    grid-area: four;
+
+    display: grid;
+    grid-template-areas: 
+    "four-1 four-2"
+    "four-3 four-4";
+}
+.four-1{
+    background-image: url(images/pipe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: four-1;
+}
+.four-2{
+    background: rgb(255, 255, 255);
+    grid-area: four-2;
+}
+.four-3{
+    background: rgb(255, 255, 255);
+    grid-area: four-3;
+}
+.four-4{
+    background-image: url(images/flair\ gun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: four-4;
+}
+
+
+.five{
+    background: rgb(255, 255, 255);
+    grid-area: five;
+
+    display: grid;
+    grid-template-areas: 
+    "five-1 five-2"
+    "five-3 five-4";
+}
+.five-1{
+        background-image: url(images/Campfire.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: five-1;
+}
+.five-2{
+    background: rgb(255, 255, 255);
+    grid-area: five-2;
+}
+.five-3{
+    background: rgb(255, 255, 255);
+    grid-area: five-3;
+}
+.five-4{
+        background-image: url(images/dopp-kit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: five-4;
+}
+
+
+.six{
+    background-image: url(images/80980.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    grid-area: six;
+}
+
+/* .seven{
+    grid-area: seven;
+}
+
+.eight{
+    background: rgb(66, 255, 157);
+    grid-area: eight;
+
+    display: grid;
+    grid-template-areas: 
+    "eight-1 eight-2"
+    "eight-3 eight-4";
+}
+.eight-1{
+    background: rgb(255, 255, 255);
+    grid-area: eight-1;
+}
+.eight-2{
+    background: rgb(255, 128, 0);
+    grid-area: eight-2;
+}
+.eight-3{
+    background: rgb(255, 204, 0);
+    grid-area: eight-3;
+}
+.eight-4{
+    background: rgb(255, 255, 255);
+    grid-area: eight-4;
+} */
+
+.footer{
+    background: rgb(235, 235, 235);
+    padding: 100px;
+    width: 100vw;
+    height: 50vh;
+    font-family: sans-serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.footer div{
+    margin-bottom: 30px;
+}
+.nav{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+}
+.footer-title{
+    background: #000;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    margin-bottom: 7px !important;
+    letter-spacing: 10px;
+
+    border: 2px solid rgb(235, 235, 235);
+    z-index: 1;
+}
+.footer-text{
+    font-size: 11px;
+    line-height: 17px;
+}
+.footer-title-right{
+    position: absolute;
+    right: 425px;
+    top: 185px;
+    width: 65px;
+    height: 42px;
+    background: #000;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+.footer-title-left{
+    position: absolute;
+    left: 425px;
+    top: 185px;
+    width: 65px;
+    height: 42px;
+    background: #000;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
